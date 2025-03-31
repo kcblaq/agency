@@ -1,6 +1,7 @@
 'use client';
 import About from '@/component/About';
 import Contact from '@/component/Contact';
+import { Demo } from '@/component/Demo';
 import Footer from '@/component/Footer';
 import Hero from '@/component/Hero';
 import Navbar from '@/component/Nav';
@@ -8,9 +9,10 @@ import Projects from '@/component/Projects';
 import ScrollToTop from '@/component/ScrollToTop';
 import Services from '@/component/Services';
 import { useEffect } from 'react';
+
+
+
 export default function Home() {
-
-
   useEffect(() => {
     // Scroll reveal function
     const revealElements = document.querySelectorAll('.reveal');
@@ -35,6 +37,7 @@ export default function Home() {
   return (
     <>
       {/* <ScrollToTop /> */}
+  
       <Navbar />
       <Hero />
       <Services />
