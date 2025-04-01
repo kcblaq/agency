@@ -28,7 +28,7 @@ const Navbar = () => {
       )}>
         <div className="container mx-auto flex justify-between items-center">
           <a href="#" className="text-2xl font-bold text-agency-black">
-            Lagos<span className="text-agency-red">Dev</span>
+            Kc<span className="text-agency-red">BlaQ</span>
           </a>
   
           {/* Desktop Menu */}

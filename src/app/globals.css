@@ -1,4 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 352 79% 57%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-white text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    @apply bg-gradient-to-r from-agency-red via-agency-black to-agency-red bg-[length:200%_100%] animate-gradient-shift;
+  }
+  
+  .secondary-gradient {
+    @apply bg-gradient-to-br from-agency-red/90 to-agency-black/90 bg-[length:200%_100%] hover:animate-gradient-shift;
+  }
+  
+  .reveal {
+    @apply opacity-0 translate-y-8 transition-all duration-700 ease-in-out;
+  }
+  
+  .reveal.active {
+    @apply opacity-100 translate-y-0;
+  }
+  
+  .btn-primary {
+    @apply bg-agency-red text-white px-6 py-3 rounded-md font-medium hover:bg-agency-red/90 transition-all duration-300;
+  }
+  
+  .btn-secondary {
+    @apply bg-agency-black text-white px-6 py-3 rounded-md font-medium hover:bg-agency-black/90 transition-all duration-300;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-agency-red text-agency-red px-6 py-3 rounded-md font-medium hover:bg-agency-red hover:text-white transition-all duration-300;
+  }
+  
+  .section-heading {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 lg:mb-10;
+  }
+  
+  .section-subheading {
+    @apply text-xl sm:text-2xl font-medium mb-8 text-gray-700 max-w-3xl mx-auto;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-lg;
+  }
+  
+  .animated-gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r animate-gradient-text;
+    background-image: linear-gradient(
+      90deg,
+      #ea384c 0%,
+      #ff6b6b 25%,
+      #d92a3d 50%,
+      #b81c2e 75%,
+      #9b87f5 85%,
+      #D6BCFA 95%,
+      #ea384c 100%
+    );
+    background-size: 200% 100%;
+  }
+}
+
+@keyframes gradient-text {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@layer utilities {
+  .animate-gradient-text {
+    animation: gradient-text 4s ease infinite;
+  }
+}
+/* 
 
 @tailwind base;
 @tailwind components;
@@ -89,4 +212,7 @@
   .card-hover {
     @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-lg;
   }
-}
+} */
+
+
+
