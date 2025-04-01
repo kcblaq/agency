@@ -32,7 +32,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-16 lg:py-20 relative z-10">
         <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 reveal">
-            We <span className="text-agency-red">design</span> and <span className="text-agency-red">develop</span> digital experiences
+            We <span className="animated-gradient-text">design</span> and <span className="animated-gradient-text">develop</span> digital experiences
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-700 mb-10 max-w-3xl reveal">

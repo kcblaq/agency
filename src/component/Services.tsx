@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, Palette, Code, Database, ShieldCheck } from 'lucide-react';
+import { Search, Palette, Code, Database, ShieldCheck, ClipboardList } from 'lucide-react';
 
 const serviceItems = [
   {
@@ -26,6 +26,11 @@ const serviceItems = [
     icon: <ShieldCheck className="w-10 h-10 text-agency-red" />,
     title: "Quality Assurance",
     description: "Rigorous testing methodologies to ensure your software is bug-free and performs flawlessly."
+  },
+  {
+    icon: <ClipboardList className="w-10 h-10 text-agency-red" />,
+    title: "Project Management",
+    description: "Strategic planning and execution to ensure your projects are delivered on time, within scope, and on budget."
   }
 ];
 
